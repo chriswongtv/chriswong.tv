@@ -9,7 +9,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Bitter' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Bitter|Raleway|Titillium+Web' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -17,32 +17,98 @@
         <div class="row content">
             <div id="sidebar" class="col-md-3 center">
                 <!-- Desktop menu -->
-                <div id="desktop-menu" class="visible-md-block visible-lg-block">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#awards">Awards</a>
-                    <a href="#travel">Travel</a>
-                    <a href="#contact">Contact</a>
-                </div>
+                <ul id="desktop-menu" class="nav visible-md-block visible-lg-block">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#travel">Travel</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
 
                 <!-- Mobile menu bar -->
                 <div id="mobile-menu" class="visible-xs-block visible-sm-block">
 
                 </div>
             </div>
-            <div id="main" class="col-md-9">
+            <div id="main" class="col-md-9" data-spy="scroll" data-target="#sidebar">
                 <!-- About section -->
-                <div id="about" class="center">
+                <section id="about" class="center">
                     <div class="about">
                         <h1>Chris Wong</h1>
-                        <p><img src="img/chris.jpg" align="right">Hello! I'm a web developer in my 3rd year at the University of California at Irvine, majoring in Computer Science and specializing in Intelligent Systems. I'm a technology enthusiast and love building things, and I'm familiar with the latest web application frameworks such as Bootstrap and Node.js. Besides web development, I'm experienced in developing hybrid mobile apps using Ionic Framework and developing software using C++ and Java, too.</p>
+                        <p><img src="img/chris.jpg" align="right">Hello! I'm a web developer in my 3rd year at the <a href="http://www.uci.edu" class="inline-link">University of California at Irvine</a>, majoring in Computer Science and specializing in Intelligent Systems. I'm a technology enthusiast and love building things, and I'm familiar with the latest web application frameworks such as Bootstrap and Node.js. Besides web development, I'm experienced in developing hybrid mobile apps using Ionic Framework and developing software using C++ and Java, too.</p>
                     </div>
-                </div>
+                </section>
 
-                <!-- Projects Section -->
-                <div id="projects" class="center">
+                <!-- Works Section -->
+                <section id="works" class="center">
+                    <div class="works">
+                        <h1>Works</h1>
+                        <div class="card">
+                            <div class="card-header">
+                                Cogifire
+                            </div>
+                            <div class="card-title">
+                                Founder & Web Developer
+                            </div>
+                            <div class="card-content">
+                                I am a web developer
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                Cogifire
+                            </div>
+                            <div class="card-title">
+                                Founder & Web Developer
+                            </div>
+                            <div class="card-content">
+                                I am a web developer
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                Cogifire
+                            </div>
+                            <div class="card-title">
+                                Founder & Web Developer
+                            </div>
+                            <div class="card-content">
+                                I am a web developer
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                Cogifire
+                            </div>
+                            <div class="card-title">
+                                Founder & Web Developer
+                            </div>
+                            <div class="card-content">
+                                I am a web developer
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                Cogifire
+                            </div>
+                            <div class="card-title">
+                                Founder & Web Developer
+                            </div>
+                            <div class="card-content">
+                                I am a web developer
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Awards Section -->
+                <section id="awards" class="center">
                 
-                </div>
+                </section>
             </div>
         </div>
 
