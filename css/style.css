@@ -88,18 +88,13 @@ h1, h2, h3 {
 #about {
 	min-height: 100%;
 	background-color: #ECF0F1;
-}
-
-#about h1 {
 	color: #2c3e50;
 }
-
 #about p {
 	font-family: 'Bitter', serif;
 	font-size: 20px;
 	line-height: 1.75em;
 	text-align: justify;
-	color: #2c3e50;
 }
 
 #about img {
@@ -119,13 +114,14 @@ h1, h2, h3 {
 }
 
 .works {
+	padding-top: 3%;
+	padding-bottom: 3%;
 	width: 80%;
 }
 
 .card {
 	width: 100%;
 	background-color: #ECF0F1;
-	min-height: 100px;
 	border-radius: 2px;
 	color: #34495e;
 	box-shadow: 7.5px 7.5px 3.75px #2c3e50;
@@ -135,16 +131,40 @@ h1, h2, h3 {
 .card-header {
 	padding-top: 1%;
 	padding-left: 3%;
+	padding-right: 3%;
 	font-size: 24px;
 	font-family: 'Titillium Web', sans-serif;
 }
 
 .card-title {
 	padding-left: 3%;
+	padding-right: 3%;
 	font-weight: bold;
 }
 
 .card-content {
 	font-family: 'Raleway', sans-serif;
 	padding-left: 3%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+}
+
+#awards {
+	min-height: 100%;
+	background-color: #ecf0f1;
+	color: #2c3e50;
+}
+
+.awards {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	width: 80%;
+}
+
+#awards .card {
+	background-color: #34495e;
+	border-radius: 2px;
+	color: #ecf0f1;
+	box-shadow: 7.5px 7.5px 3.75px #bdc3c7;
+	margin-bottom: 2.5%;
 }
