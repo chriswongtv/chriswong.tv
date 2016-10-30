@@ -73,26 +73,31 @@ h1, h2, h3 {
 		overflow: scroll;
 		height: 100%;
 	}
-
-	.awards {
-		padding-bottom: 3%;
-	}
 }
 
 @media (max-width: 991px) {
 	#about p {
 		font-size: 1.2em !important;
 		text-align: inherit !important;
-		padding-bottom: 10%;
+		margin-bottom: 10%;
+	}
+
+	.works {
+		margin-bottom: 10%;
 	}
 
 	.awards {
-		padding-bottom: 20%;
+		margin-bottom: 10%;
 	}
 
 	.collapse-card-title {
 		padding-right: 10%;
-		font-size: 6vmin !important;
+		font-size: 1.5em !important;
+	}
+
+	.collapse-card-issuer {
+		font-weight: 400 !important;
+		font-size: 1.1em !important;
 	}
 }
 
@@ -185,6 +190,7 @@ h1, h2, h3 {
 
 .awards {
 	padding-top: 3%;
+	padding-bottom: 3%;
 	width: 80%;
 }
 
@@ -216,7 +222,7 @@ h1, h2, h3 {
 .collapse-card-issuer {
 	padding-left: 3%;
 	padding-right: 3%;
-	padding-bottom: 2%;
+	padding-bottom: 1.5%;
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 600;
 }
