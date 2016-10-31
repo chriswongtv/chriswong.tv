@@ -48,7 +48,7 @@ h1, h2, h3 {
 		height: 100%;
 		position: static;
 		background-color: #58ACE3;
-		font-family: 'Roboto Slab', serif;
+		font-family: 'Titillium Web', sans-serif;
 		line-height: 2em;
 		font-size: 1.5em;
 		padding-left: 0 !important;
@@ -139,7 +139,7 @@ h1, h2, h3 {
 	color: #2c3e50;
 }
 #about p {
-	font-family: 'Bitter', serif;
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 1.5em;
 	line-height: 1.75em;
 	text-align: justify;
@@ -196,7 +196,7 @@ h1, h2, h3 {
 }
 
 .card-content {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 	padding-left: 3%;
 	padding-right: 2%;
 	padding-bottom: 2%;
@@ -262,7 +262,7 @@ h1, h2, h3 {
 	padding-right: 2%;
 	padding-top: 1%;
 	padding-bottom: 1.5%;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 #contact {
