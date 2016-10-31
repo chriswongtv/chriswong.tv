@@ -75,7 +75,7 @@ h1, h2, h3 {
 		margin-bottom: 10%;
 	}
 
-	.works {
+	.work {
 		margin-bottom: 10%;
 	}
 
@@ -153,13 +153,13 @@ h1, h2, h3 {
 	width: 80%;
 }
 
-#works {
+#work {
 	min-height: 100%;
 	background-color: #34495e;
 	color: #ecf0f1;
 }
 
-.works {
+.work {
 	padding-top: 3%;
 	padding-bottom: 3%;
 	width: 80%;
