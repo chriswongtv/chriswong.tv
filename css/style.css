@@ -69,6 +69,26 @@ h1, h2, h3 {
 }
 
 @media (max-width: 991px) {
+	#sidebar {
+		background-color: #34495e;
+		height: 7.5%;
+	}
+
+	#main {
+		height: 100%;
+	}
+
+	#mobile-menu {
+		font-family: 'Roboto Slab', serif;
+		color: white;
+		font-size: 2em;
+	}
+
+	#about {
+		min-height: 0 !important;
+		height: 92.5% !important;
+	}
+
 	#about p {
 		font-size: 1.2em !important;
 		text-align: inherit !important;
@@ -88,6 +108,10 @@ h1, h2, h3 {
 		width: 80% !important;
 	}
 
+	.collapse-card {
+		margin-top: 7.5% !important;
+	}
+
 	.collapse-card-title {
 		padding-right: 10%;
 		font-size: 1.5em !important;
@@ -105,6 +129,10 @@ h1, h2, h3 {
 
 	.email span {
 		font-size: 1.4em !important;
+	}
+
+	#contact {
+		height: 100%;
 	}
 }
 
