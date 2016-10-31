@@ -71,7 +71,7 @@ h1, h2, h3 {
 @media (max-width: 991px) {
 	#sidebar {
 		background-color: #34495e;
-		height: 7.5%;
+		height: 10%;
 	}
 
 	#main {
@@ -86,7 +86,7 @@ h1, h2, h3 {
 
 	#about {
 		min-height: 0 !important;
-		height: 92.5% !important;
+		height: 90% !important;
 	}
 
 	#about p {
@@ -108,18 +108,38 @@ h1, h2, h3 {
 		width: 80% !important;
 	}
 
+	.contact a {
+		padding: 1em;
+	}
+
+	.card {
+		margin-bottom: 5% !important;
+	}
+
 	.collapse-card {
 		margin-top: 7.5% !important;
 	}
 
 	.collapse-card-title {
-		padding-right: 10%;
+		padding-left: 5% !important;
+		padding-right: 10% !important;
+		padding-top: 3% !important;
 		font-size: 1.5em !important;
 	}
 
 	.collapse-card-issuer {
 		font-weight: 400 !important;
 		font-size: 1.1em !important;
+		padding-left: 5% !important;
+		padding-right: 10% !important;
+		padding-bottom: 4% !important;
+	}
+
+	.collapse-card-content {
+		padding-left: 5% !important;
+		padding-right: 5% !important;
+		padding-top: 2.5% !important;
+		padding-bottom: 2.5% !important;
 	}
 
 	.email {
@@ -332,7 +352,7 @@ h1, h2, h3 {
 
 .email span {
 	background-color: #D7DBDC;
-	padding: 2.5%;
+	padding: 2.5% 4% 2.5% 4%;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 500;
 	border-radius: 5px;
