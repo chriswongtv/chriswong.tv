@@ -9,7 +9,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Titillium+Web:400,600|Roboto+Mono:500|Lato:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700|Titillium+Web:400,600|Roboto+Mono:500|Lato:300' rel='stylesheet' type='text/css'>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/style.css">
@@ -19,6 +19,7 @@
             <div id="sidebar" class="col-md-3 center">
                 <!-- Desktop menu -->
                 <ul id="desktop-menu" class="nav visible-md-block visible-lg-block">
+                    <h1>Chris Wong</h1>
                     <li><a href="#about">About</a></li>
                     <li><a href="#works">Works</a></li>
                     <li><a href="#awards">Awards</a></li>
@@ -35,8 +36,9 @@
                 <!-- About Section -->
                 <section id="about" class="center">
                     <div class="about">
-                        <h1>Chris Wong</h1>
-                        <p><img src="img/chris.jpg" align="right">Hello! I'm a web developer in my 3rd year at the <a href="http://www.uci.edu" class="inline-link">University of California at Irvine</a>, majoring in Computer Science and specializing in Intelligent Systems. I'm a technology enthusiast and love building things, and I'm familiar with the latest web application frameworks such as Bootstrap and Node.js. Besides web development, I'm experienced in developing hybrid mobile apps using Ionic Framework and developing software using C++ and Java, too.</p>
+                        <h1>About</h1>
+                        <p><img src="img/chris.jpg" align="right">Hello! I'm a web developer in my 3rd year at the <a href="http://www.uci.edu" class="link-underline">University of California at Irvine</a>, majoring in Computer Science and specializing in Intelligent Systems. I'm a technology enthusiast, and I build web applications and mobile apps.</p>
+                        <p>In my free time, I enjoy <a href="https://www.flickr.com/photos/chriswongtv" class="link-underline">photography</a>, traveling, reading, and a good conversation over coffee.</p>
                     </div>
                 </section>
                 <!-- End About Section -->
@@ -125,17 +127,19 @@
                     <div class="awards">
                         <h1>Awards</h1>
                         <!-- JoyFeed Card -->
-                        <div class="collapse-card">
-                            <a role="button" data-toggle="collapse" href="#joyfeed">
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <div class="collapse-card-title">
-                                Most Innovative Cognitive Computing Solution
+                        <a class="collapse-toggle" role="button" data-toggle="collapse" href="#joyfeed">
+                            <div class="collapse-card">
+                                <div class="award-toggle">
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="collapse-card-title">
+                                    Most Innovative Cognitive Computing Solution
+                                </div>
+                                <div class="collapse-card-issuer">
+                                    Hewlett Packard Enterprise at AngelHack SF 2016
+                                </div>
                             </div>
-                            <div class="collapse-card-issuer">
-                                Hewlett Packard Enterprise at AngelHack SF 2016
-                            </div>
-                        </div>
+                        </a>
                         <div id="joyfeed" class="collapse collapse-card-box">
                             <div class="collapse-card-content">
                                 Joyfeed is a browser extension that analyzes human emotions using machine learning and filters negative posts on unhappy users’ social feed by running sentiment analysis through the posts.
@@ -144,17 +148,19 @@
                         <!-- End JoyFeed Card -->
 
                         <!-- Clow Card -->
-                        <div class="collapse-card">
-                            <a role="button" data-toggle="collapse" href="#clow">
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <div class="collapse-card-title">
-                                Best Big Data Hack Award
+                        <a class="collapse-toggle" role="button" data-toggle="collapse" href="#clow">
+                            <div class="collapse-card">
+                                <div class="award-toggle">
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="collapse-card-title">
+                                    Best Big Data Hack Award
+                                </div>
+                                <div class="collapse-card-issuer">
+                                    TreeHacks 2016
+                                </div>
                             </div>
-                            <div class="collapse-card-issuer">
-                                TreeHacks 2016
-                            </div>
-                        </div>
+                        </a>
                         <div id="clow" class="collapse collapse-card-box">
                             <div class="collapse-card-content">
                                 Clow is a clinic-facing app that uses emotion analysis and machine learning to predict patients’ illnesses. To the patient, Clow acts as an electronic clinic check-in system for them to sign in before their session; during the sign-in process, Clow will capture an image of the patient’s face and will run it through an emotion analysis algorithm and generate a set of “scores” across multiple categories, including fear, sadness and happiness. After that, Dr. Clow – our machine learning service – will predict the patient’s illness using its predictive analysis algorithm, which is trained and improved by modeling the actual diagnosis result and the patient’s emotion “scores”.<br><br>The idea of Clow was conceived and materialized during TreeHacks 2016 – Stanford University's national hackathon – and it was awarded TreeHacks Health's "Best Big Data Hack" award.
@@ -163,17 +169,19 @@
                         <!-- End Clow Card -->
 
                         <!-- Deloitte Card -->
-                        <div class="collapse-card">
-                            <a role="button" data-toggle="collapse" href="#deloitte">
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <div class="collapse-card-title">
-                                2nd Runners Up
+                        <a class="collapse-toggle" role="button" data-toggle="collapse" href="#deloitte">
+                            <div class="collapse-card">
+                                <div class="award-toggle">
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="collapse-card-title">
+                                    2nd Runners Up
+                                </div>
+                                <div class="collapse-card-issuer">
+                                    Startup Deloitte UCI Competition
+                                </div>
                             </div>
-                            <div class="collapse-card-issuer">
-                                Startup Deloitte UCI Competition
-                            </div>
-                        </div>
+                        </a>
                         <div id="deloitte" class="collapse collapse-card-box">
                             <div class="collapse-card-content">
                                 At Deloitte's Startup UCI Competition, my team and I presented “ZotParker”, a plan to tackle UC Irvine’s limited parking problem using RFID chips, geo-fencing and data analytics. I worked with a diverse team of 6 members with different majors to come up with a complete solution in a week, and I advised with the technological implementation of the solution and created multiple system diagrams in the report.
@@ -182,17 +190,19 @@
                         <!-- End Deloitte Card -->
 
                         <!-- AeroSearch Card -->
-                        <div class="collapse-card">
-                            <a role="button" data-toggle="collapse" href="#aerosearch">
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <div class="collapse-card-title">
-                                Sponsor Prize Winner
+                        <a class="collapse-toggle" role="button" data-toggle="collapse" href="#aerosearch">
+                            <div class="collapse-card">
+                                <div class="award-toggle">
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="collapse-card-title">
+                                    Sponsor Prize Winner
+                                </div>
+                                <div class="collapse-card-issuer">
+                                    Emirates Travel Hackathon
+                                </div>
                             </div>
-                            <div class="collapse-card-issuer">
-                                Emirates Travel Hackathon
-                            </div>
-                        </div>
+                        </a>
                         <div id="aerosearch" class="collapse collapse-card-box">
                             <div class="collapse-card-content">
                                 AeroSearch is a browser extension that allows users to reverse lookup any image on the Internet, suggests the location, and displays a calendar with prices to the said destination, which the user can seamlessly continue to book their flight.<br><br>In order to make the process as smooth as possible, we broke the project down into two parts – a Chrome extension and a Node.js server running on Amazon AWS. After installing the extension on Google Chrome, the user has the option of using AeroSearch when right-clicking any images on the web. The image will then be sent to our web server to conduct a reverse lookup, and Google Maps API is used to locate the user's and the destination's closest airport.<br><br>This project was put together at Emirates Travel Hackathon held at San Francisco, where AeroSearch was specifically picked by Cricking – a sponsor at the hackathon – to be awarded.

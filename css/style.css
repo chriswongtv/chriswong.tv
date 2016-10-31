@@ -18,23 +18,16 @@ body {
 	align-items: center;
 }
 
-.inline-link {
+.link-underline {
+    border-bottom: 1px solid #b4e7f8;
+    box-shadow: inset 0 -6px 0 #b4e7f8;
     color: inherit;
-    position: relative;
-    text-decoration: none;
-    transition: 80ms;
+    transition: background .15s cubic-bezier(.33,.66,.66,1);
+    text-decoration: none !important;
 }
 
-.inline-link:after {
-    background: rgba(33,133,213,.2);
-    bottom: -2px;
-    content: "";
-    height: 8px;
-    left: 0;
-    position: absolute;
-    transition: 60ms;
-    width: 100%;
-    z-index: -1;
+.link-underline:hover {
+    background: #b4e7f8;
 }
 
 h1, h2, h3 {
@@ -126,6 +119,11 @@ h1, h2, h3 {
 	padding-right: 0 !important;
 }
 
+#desktop-menu h1 {
+	color: #ECF0F1;
+	padding-bottom: 5%;
+}
+
 #desktop-menu a {
 	text-align: center;
 	text-decoration: none;
@@ -210,8 +208,12 @@ h1, h2, h3 {
 
 .awards {
 	padding-top: 3%;
-	padding-bottom: 3%;
+	padding-bottom: 5%;
 	width: 80%;
+}
+
+.collapse-toggle {
+	text-decoration: none !important;
 }
 
 .collapse-card {
@@ -223,12 +225,12 @@ h1, h2, h3 {
 	margin-top: 2.5%;
 }
 
-.collapse-card a {
+.award-toggle {
 	color: #ECF0F1;
 	position: absolute;
 	right: 12%;
 	font-size: 40px;
-	padding-top: 1%;
+	margin-top: 1%;
 }
 
 .collapse-card-title {
@@ -297,6 +299,7 @@ h1, h2, h3 {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 400;
 	margin: 2.5em;
+	margin-bottom: 3em;
 }
 
 .email span {
