@@ -11,7 +11,7 @@
         <link async rel="stylesheet" href="css/bootstrap.min.css">
         <link async href='https://fonts.googleapis.com/css?family=Roboto+Slab:700|Titillium+Web:400,600|Roboto+Mono:500|Lato:300' rel='stylesheet' type='text/css'>
         <link async href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="css/blueimp-gallery.min.css">
         <link async rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -23,7 +23,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#awards">Awards</a></li>
-                    <!-- <li><a href="#travel">Travel</a></li> -->
+                    <li><a href="#travel">Travel</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
@@ -213,6 +213,27 @@
                 </section>
                 <!-- End Awards Section -->
 
+                <!-- Travel Section -->
+                <section id="travel" class="center">
+                    <div class="travel">
+                        <h1>Travel</h1>
+                        <div class="row">
+                            <div id="links">
+                                <a href="images/banana.jpg" title="Banana">
+                                    <img src="images/thumbnails/banana.jpg" alt="Banana">
+                                </a>
+                                <a href="images/apple.jpg" title="Apple">
+                                    <img src="images/thumbnails/apple.jpg" alt="Apple">
+                                </a>
+                                <a href="images/orange.jpg" title="Orange">
+                                    <img src="images/thumbnails/orange.jpg" alt="Orange">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Travel Section -->
+
                 <!-- Contact Section -->
                 <section id="contact" class="center">
                     <div class="contact">
@@ -234,11 +255,23 @@
             </div>
         </div>
 
+        <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+        </div>
+
         <script 
             src="https://code.jquery.com/jquery-3.1.1.min.js" 
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
             crossorigin="anonymous"></script>
         <script async src="js/bootstrap.min.js"></script>
+        <script src="js/blueimp-gallery.min.js"></script>
         <script async src="js/main.js"></script>
 
         <script>
