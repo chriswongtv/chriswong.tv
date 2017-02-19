@@ -5,6 +5,7 @@ html, body {
 body {
 	margin: 0;
 	font-family: 'Nunito', sans-serif;
+	color: white;
 	transition: all 2s ease;
 }
 
@@ -15,8 +16,8 @@ body {
 }
 
 .link-underline {
-    border-bottom: 1px solid #b4e7f8;
-    box-shadow: inset 0 -6px 0 #b4e7f8;
+    border-bottom: 0px solid #b4e7f8;
+    box-shadow: inset 0 -3px 0 #b4e7f8;
     color: inherit;
     transition: background .15s cubic-bezier(.33,.66,.66,1);
     text-decoration: none !important;
@@ -36,20 +37,9 @@ body {
     }
 }
 
-/* Background */
-#background {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	z-index: -1;
-	background: linear-gradient(-135deg, #F89F76 0, #A83279 49%, #2C136C 100%);
-}
-
 /* Hero */
 #hero {
 	height: 100%;
-	color: white;
 	text-align: center;
 	transition: all .5s ease;
 }
@@ -58,6 +48,8 @@ body {
 	height: 100px;
 	border-radius: 100%;
 	border: 0.15em solid white;
+	animation: fadein .5s both;
+	animation-delay: .25s;
 }
 
 .hero-name {
@@ -65,13 +57,21 @@ body {
 	font-weight: 600;
 	letter-spacing: 0.025em;
 	padding: 0.1em;
+	animation: fadein .5s both;
+	animation-delay: .3s;
 }
 
 .hero-title {
 	font-size: 1em;
 	font-weight: 200;
 	letter-spacing: 0.2em;
-	padding-bottom: 3em;
+	animation: fadein .5s both;
+	animation-delay: .4s;
+}
+
+/*.navbar {
+	animation: fadein .5s both;
+	animation-delay: .5s;
 }
 
 .navbar a {
@@ -88,11 +88,53 @@ body {
 
 .navbar a+a {
 	padding-left: 1.5em;
+}*/
+
+#content {
+	height: 100%;
+}
+
+/* Background */
+#background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	transition: all .5s linear;
+}
+
+.bghero {
+	background-color: #A83279;
+}
+
+.bgabout {
+	background-color: #764ba2;
+}
+
+.bgabout:after {
 }
 
 /* About */
 #about {
-	min-height: 100%;
+	height: 100%;
+	margin-top: -10%;
+}
+
+#about .about {
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	line-height: 1.6em;
+	font-size: 1.4em;
+}
+
+#about .about .header {
+	font-size: 1.6em;
+	font-weight: 700;
 }
 
 /* Desktop */
@@ -102,7 +144,9 @@ body {
 
 /* Mobile */
 @media (max-width: 991px) {
-	
+	#about .about {
+		font-size: 5vw;
+	}
 }
 
 @media (min-width: 1500px) {

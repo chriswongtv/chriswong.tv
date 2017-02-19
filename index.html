@@ -12,26 +12,30 @@
     <link async rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="background">
+    <div id="background" class="bghero" :class="{ bgabout: about }">
     </div>
-    <div id="hero" class="center" :class="{ top: topbar }">
+
+    <div id="hero" class="center">
         <div>
             <div class="hero-img">
                 <img src="img/chris.jpg">
             </div>
             <div class="hero-name">Chris Wong</div>
             <div class="hero-title">WEB DEVELOPER</div>
-            <div class="navbar">
+            <!-- <div class="navbar">
                 <a href="">About</a>
                 <a href="">Work</a>
                 <a href="">Awards</a>
                 <a href="">Contact</a>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <div id="about" class="center">
-        <div>
+        <div class="about">
+            <span class="header">About</span>
+            <p>Hello! I'm a web developer studying computer science in my 3rd year at the <a href="http://www.uci.edu" class="link-underline" target="_blank">University of California at Irvine</a>. Besides building web applications, I love exploring UI/UX techniques and observing design trends, and I'm joining <a href="https://www.linkedin.com" class="link-underline" target="_blank">LinkedIn</a> as a UI engineer intern this summer.</p>
+            <p>When I'm not developing software, I enjoy <a href="https://www.flickr.com/photos/chriswongtv" class="link-underline" target="_blank">photography</a>, traveling, reading, and having a good conversation over coffee. Feel free to check out my work below or my <a href="http://resume.chriswong.tv" class="link-underline" target="_blank">resume</a>.</p>
         </div>
     </div>
 

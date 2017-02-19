@@ -1,18 +1,25 @@
-var hero = new Vue({
-	el: '#hero',
+var bg = new Vue({
+	el: '#background',
 	data: {
-		topbar: false,
+		about: false
 	},
 	mounted: function() {
 		window.addEventListener('scroll', this.mainScroll);
 	},
 	methods: {
 		mainScroll: function() {
-			if (window.scrollY > 0 && !this.topbar) {
-				this.topbar = true;
-			} else if (window.scrollY === 0 && this.topbar) {
-				this.topbar = false;
+			if (window.scrollY >= (window.innerHeight - window.innerHeight * .4) && !this.about) {
+				this.about = true;
+			} else if (window.scrollY < (window.innerHeight - window.innerHeight * .4) && this.about) {
+				this.about = false;
 			}
 		},
+	}
+})
+
+var hero = new Vue({
+	el: '#hero',
+	data: {
+		about: false,
 	}
 })
