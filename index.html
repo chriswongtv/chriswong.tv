@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/element.min.css">
+    <!-- <link rel="stylesheet" href="css/element.min.css"> -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link async rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="background" class="bghero" :class="{ bgabout: about }">
+    <div id="background" class="bg-hero">
     </div>
 
     <div id="hero" class="center">
@@ -22,12 +22,6 @@
             </div>
             <div class="hero-name">Chris Wong</div>
             <div class="hero-title">WEB DEVELOPER</div>
-            <!-- <div class="navbar">
-                <a href="">About</a>
-                <a href="">Work</a>
-                <a href="">Awards</a>
-                <a href="">Contact</a>
-            </div> -->
         </div>
     </div>
 
@@ -39,8 +33,48 @@
         </div>
     </div>
 
-    <script src="js/vue.js"></script>
-    <script src="js/element.min.js"></script>
+    <div id="cogifire" class="center">
+        <div class="work-container">
+            <div class="work-img">
+                <img src="img/cogifire.png" class="logo-img">
+            </div>
+            <div class="work-details">
+                <div class="work-name">
+                    Cogifire
+                </div>
+                <div class="work-title">
+                    Founder & Web Developer
+                </div>
+                <div class="work-description">
+                    Cogifire is a web development and services company. I founded Cogifire in 2010 as a holding company for all my web projects. In 2013, Cogifire expanded to offer professional web development and various services – including SEO marketing, advertising, and technology consultancy – to a number of corporations and organizations, and I have worked in client’s office with their marketing and product team to discuss strategies to maximize their reach.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hackuci" class="center">
+        <div class="work-container">
+            <div class="work-img">
+                <img src="img/hackuci.png" class="website-img">
+            </div>
+            <div class="work-details">
+                <div class="work-name">
+                    HackUCI
+                </div>
+                <div class="work-title">
+                    Marketing/PR Organizer & Web Developer
+                </div>
+                <div class="work-description">
+                    As a web developer in the marketing team, I am responsible for developing and maintaining its official website for marketing and outreach purposes. For HackUCI 2017, I built an interactive "live" site for participants to access vital information about the event and an admin panel for organizers to relay messages to participants in real-time and attend to participants’ mentor requests.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="http://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
     <script async src="js/main.js"></script>
 
     <script>

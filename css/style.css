@@ -69,29 +69,23 @@ body {
 	animation-delay: .4s;
 }
 
-/*.navbar {
-	animation: fadein .5s both;
-	animation-delay: .5s;
-}
-
-.navbar a {
-	text-decoration: none;
-	color: white;
-	font-size: 1.2em;
-	font-weight: 300;
-	transition: all .5s ease;
-}
-
-.navbar a:hover {
-	color: #ecf0f1;
-}
-
-.navbar a+a {
-	padding-left: 1.5em;
-}*/
-
 #content {
 	height: 100%;
+}
+
+#about>div, #cogifire>div {
+	opacity: 0;
+	transform: translateY(100px);
+	-moz-transform: translateY(100px);
+	-webkit-transform: translateY(100px);
+	transition: all 1s ease;
+}
+
+.active>div {
+	transform: translateY(0) !important;
+	-moz-transform: translateY(0) !important;
+	-webkit-transform: translateY(0) !important;
+	opacity: 1 !important;
 }
 
 /* Background */
@@ -104,21 +98,26 @@ body {
 	transition: all .5s linear;
 }
 
-.bghero {
+.bg-hero {
 	background-color: #A83279;
 }
 
-.bgabout {
+.bg-about {
 	background-color: #764ba2;
 }
 
-.bgabout:after {
+.bg-cogifire {
+	background-color: #2db4d8;
+}
+
+.bg-hackuci {
+	background-color: #34495e;
 }
 
 /* About */
 #about {
 	height: 100%;
-	margin-top: -10%;
+	margin-top: -5%;
 }
 
 #about .about {
@@ -127,7 +126,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: 300;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.045em;
 	line-height: 1.6em;
 	font-size: 1.4em;
 }
@@ -135,6 +134,71 @@ body {
 #about .about .header {
 	font-size: 1.6em;
 	font-weight: 700;
+}
+
+/* Work */
+#cogifire, #hackuci {
+	height: 100%;
+	margin-top: -5%;
+}
+
+.work-container {
+	width: 80%;
+}
+
+.work-img {
+	
+}
+
+.logo-img {
+	width: 45%;
+	box-shadow: 0 30px 60px rgba(34,34,34,.5);
+	float: right;
+	margin-top: 5%;
+}
+
+.website-img {
+	width: 100%;
+	box-shadow: 0 30px 60px rgba(34,34,34,.5);
+	position: absolute;
+	top: -15%;
+	right: -50%;
+	opacity: 0;
+	transform: translateY(100px);
+	-moz-transform: translateY(100px);
+	-webkit-transform: translateY(100px);
+	transition: all 1s ease;
+}
+
+.active .website-img {
+	opacity: 1;
+	transform: translateY(0);
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+}
+
+.work-details {
+	width: 45%;
+}
+
+.work-name {
+	font-size: 2.5em;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+}
+
+.work-title {
+	font-weight: 200;
+	font-size: 0.9em;
+	letter-spacing: 0.05em;
+}
+
+.work-description {
+	font-weight: 300;
+	padding-top: 2em;
+	letter-spacing: 0.025em;
+	line-height: 1.5;
+	font-size: 1.08em;
 }
 
 /* Desktop */
@@ -146,6 +210,36 @@ body {
 @media (max-width: 991px) {
 	#about .about {
 		font-size: 5vw;
+		letter-spacing: 0.03em;
+	}
+
+	#cogifire, #hackuci {
+		margin-top: 0;
+	}
+
+	.work-details {
+		width: 100%;
+	}
+
+	.work-name {
+		font-size: 2.2em;
+		margin-top: 0.5em;
+	}
+
+	.work-description {
+		padding-top: 1em;
+	}
+
+	.logo-img {
+		width: 100%;
+		float: none;
+		margin-top: 0;
+	}
+
+	.website-img {
+		position: initial;
+		top: initial;
+		right: initial;
 	}
 }
 
