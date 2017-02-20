@@ -73,22 +73,7 @@ body {
 	height: 100%;
 }
 
-#about>div, #cogifire>div {
-	opacity: 0;
-	transform: translateY(100px);
-	-moz-transform: translateY(100px);
-	-webkit-transform: translateY(100px);
-	transition: all 1s ease;
-}
-
-.active>div {
-	transform: translateY(0) !important;
-	-moz-transform: translateY(0) !important;
-	-webkit-transform: translateY(0) !important;
-	opacity: 1 !important;
-}
-
-/* Background */
+/* Color */
 #background {
 	width: 100%;
 	height: 100%;
@@ -107,11 +92,47 @@ body {
 }
 
 .bg-cogifire {
-	background-color: #2db4d8;
+	background-color: #3498db;
+}
+
+#cogifire .work-buttons>a:hover {
+	color: #3498db;
 }
 
 .bg-hackuci {
 	background-color: #34495e;
+}
+
+#hackuci .work-buttons>a:hover {
+	color: #34495e;
+}
+
+.bg-coolection {
+	background-color: #2C136C;
+}
+
+#coolection .work-buttons>a:hover {
+	color: #2C136C;
+}
+
+.bg-clow {
+	background-color: #d35400;
+}
+
+#clow .work-buttons>a:hover {
+	color: #d35400;
+}
+
+.bg-joyfeed {
+	background-color: #16a085;
+}
+
+#joyfeed .work-buttons>a:hover {
+	color: #16a085;
+}
+
+.bg-contact {
+	background-color: #1D8FE1;
 }
 
 /* About */
@@ -126,28 +147,32 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: 300;
-	letter-spacing: 0.045em;
+	letter-spacing: 0.04em;
 	line-height: 1.6em;
 	font-size: 1.4em;
 }
 
-#about .about .header {
+.header {
 	font-size: 1.6em;
 	font-weight: 700;
 }
 
 /* Work */
-#cogifire, #hackuci {
+#work {
 	height: 100%;
+}
+
+#work>div {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+#cogifire {
 	margin-top: -5%;
 }
 
 .work-container {
 	width: 80%;
-}
-
-.work-img {
-	
 }
 
 .logo-img {
@@ -158,23 +183,11 @@ body {
 }
 
 .website-img {
-	width: 100%;
+	width: 90%;
 	box-shadow: 0 30px 60px rgba(34,34,34,.5);
 	position: absolute;
 	top: -15%;
-	right: -50%;
-	opacity: 0;
-	transform: translateY(100px);
-	-moz-transform: translateY(100px);
-	-webkit-transform: translateY(100px);
-	transition: all 1s ease;
-}
-
-.active .website-img {
-	opacity: 1;
-	transform: translateY(0);
-	-moz-transform: translateY(0);
-	-webkit-transform: translateY(0);
+	right: -40%;
 }
 
 .work-details {
@@ -195,26 +208,106 @@ body {
 
 .work-description {
 	font-weight: 300;
-	padding-top: 2em;
-	letter-spacing: 0.025em;
+	padding: 2em 0 2.5em 0;
+	letter-spacing: 0.04em;
 	line-height: 1.5;
 	font-size: 1.08em;
 }
 
+.work-buttons>a {
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 0.65em 1.2em;
+	border-radius: 3px;
+	transition: all .2s ease;
+}
+
+.work-buttons>a:hover {
+	background-color: white;
+}
+
+.work-buttons>a+a {
+	margin-left: 0.7em;
+}
+
+/* Contact */
+#contact {
+	height: 100%;
+	margin-top: 200%;
+	font-size: 1.4em;
+}
+
+#contact .contact {
+	width: 80%;
+}
+
+.contact-card {
+	margin: 2em 0;
+	display: block;
+	text-decoration: none;
+}
+
+.contact-card span {
+	background-color: white;
+	color: #1D8FE1;
+	padding: 1.3% 1.8%;
+	font-family: 'Roboto Mono', monospace;
+	border-radius: 5px;
+	font-size: 0.85em;
+	transition: all .2s ease;
+}
+
+.contact-card i {
+	font-size: 1em;
+}
+
+.contact-card span:hover {
+	background-color: #ecf0f1;
+}
+
 /* Desktop */
 @media (min-width: 992px) {
-	
+	#about>div, .work-container, #contact>div {
+		opacity: 0;
+		transform: translateY(15%);
+		-moz-transform: translateY(15%);
+		-webkit-transform: translateY(15%);
+		transition: all .5s ease;
+	}
+
+	.active>div {
+		transform: translateY(0) !important;
+		-moz-transform: translateY(0) !important;
+		-webkit-transform: translateY(0) !important;
+		opacity: 1 !important;
+	}
+
+	#clow .website-img, #joyfeed .website-img {
+		width: 65%;
+		top: -10%;
+		right: -15%;
+	}
 }
 
 /* Mobile */
 @media (max-width: 991px) {
+	#about>div, .work-container {
+		opacity: 0;
+		transition: all .5s ease;
+	}
+
+	.active>div {
+		opacity: 1 !important;
+	}
+
 	#about .about {
-		font-size: 5vw;
+		font-size: 4.7vw;
 		letter-spacing: 0.03em;
 	}
 
-	#cogifire, #hackuci {
-		margin-top: 0;
+	#cogifire, #hackuci, #coolection, #clow, #joyfeed {
+		margin-top: 20%;
 	}
 
 	.work-details {
@@ -227,7 +320,10 @@ body {
 	}
 
 	.work-description {
-		padding-top: 1em;
+		padding: 1em 0 1.5em 0;
+		letter-spacing: 0.03em;
+		line-height: 1.45;
+		font-size: 2.6vh;
 	}
 
 	.logo-img {
@@ -241,8 +337,24 @@ body {
 		top: initial;
 		right: initial;
 	}
-}
 
-@media (min-width: 1500px) {
-	
+	#clow .website-img, #joyfeed .website-img {
+		width: 65%;
+		margin-left: 15%;
+	}
+
+	.contact-card {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.contact-card span {
+		font-size: 0.95em;
+		padding: 1.5% 3.5%;
+	}
+
+	#contact {
+		margin-top: 700%;
+		height: 120%;
+	}
 }
