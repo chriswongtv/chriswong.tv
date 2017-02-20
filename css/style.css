@@ -268,7 +268,7 @@ body {
 /* Desktop */
 @media (min-width: 992px) {
 	#about>div, .work-container, #contact>div {
-		opacity: 0;
+		opacity: .1;
 		transform: translateY(15%);
 		-moz-transform: translateY(15%);
 		-webkit-transform: translateY(15%);
@@ -292,7 +292,7 @@ body {
 /* Mobile */
 @media (max-width: 991px) {
 	#about>div, .work-container {
-		opacity: 0;
+		opacity: .1;
 		transition: all .5s ease;
 	}
 
