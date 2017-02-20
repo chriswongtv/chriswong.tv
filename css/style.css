@@ -234,7 +234,6 @@ body {
 /* Contact */
 #contact {
 	height: 100%;
-	margin-top: 200%;
 	font-size: 1.4em;
 }
 
@@ -354,7 +353,6 @@ body {
 	}
 
 	#contact {
-		margin-top: 700%;
 		height: 120%;
 	}
 }
