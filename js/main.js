@@ -29,8 +29,7 @@ $(document).ready(function() {
 				$("#background").removeClass("bg-joyfeed").addClass("bg-contact");
 				$("#contact").addClass("active");
 			} else if (window.scrollY < ($(window).height() - $(window).height() * .5 - $(window).height() * .05)) {
-				$("#background").removeClass("bg-about");
-				$(".about").removeClass("active");
+				$("#background").removeClass().addClass("bg-hero");
 			}
 		} else {
 			if (window.scrollY >= ($(window).height() - $(window).height() * .5) &&
@@ -61,8 +60,7 @@ $(document).ready(function() {
 				$("#background").removeClass("bg-joyfeed").addClass("bg-contact");
 				$("#contact").addClass("active");
 			} else if (window.scrollY < ($(window).height() - $(window).height() * .5)) {
-				$("#background").removeClass("bg-about");
-				$(".about").removeClass("active");
+				$("#background").removeClass().addClass("bg-hero");
 			}
 		}
 	});
