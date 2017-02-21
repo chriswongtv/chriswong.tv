@@ -1,6 +1,5 @@
-retinajs();
-
 $(document).ready(function() {
+	retinajs();
 	window.addEventListener('scroll', function() {
 		if ($(window).width() > 991) {
 			if (window.scrollY >= ($(window).height() - $(window).height() * .5 - $(window).height() * .05) &&
