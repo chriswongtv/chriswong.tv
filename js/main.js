@@ -1,3 +1,5 @@
+retinajs();
+
 $(document).ready(function() {
 	window.addEventListener('scroll', function() {
 		if ($(window).width() > 991) {
