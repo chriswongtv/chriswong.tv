@@ -282,7 +282,14 @@ body {
 		opacity: 1 !important;
 	}
 
-	#clow .website-img, #joyfeed .website-img {
+	#clow .website-img {
+		width: 70%;
+		top: 5%;
+		right: -20%;
+		box-shadow: none;
+	}
+
+	#joyfeed .website-img {
 		width: 60%;
 		top: -10%;
 		right: -15%;
