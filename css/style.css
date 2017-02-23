@@ -211,7 +211,7 @@ body {
 	padding: 2em 0 2.5em 0;
 	letter-spacing: 0.04em;
 	line-height: 1.5;
-	font-size: 1.08em;
+	font-size: 1.05em;
 }
 
 .work-buttons>a {
@@ -309,11 +309,15 @@ body {
 
 	#about .about {
 		font-size: 4.7vw;
-		letter-spacing: 0.03em;
+		letter-spacing: 0.025em;
 	}
 
 	#cogifire, #hackuci, #coolection, #clow, #joyfeed {
 		margin-top: 10%;
+	}
+
+	.work-img {
+		text-align: center;
 	}
 
 	.work-details {
@@ -327,7 +331,7 @@ body {
 
 	.work-description {
 		padding: 1em 0 1.5em 0;
-		letter-spacing: 0.03em;
+		letter-spacing: 0.02em;
 		line-height: 1.45;
 		font-size: 2.6vh;
 	}
@@ -344,9 +348,8 @@ body {
 		right: initial;
 	}
 
-	#clow .website-img, #joyfeed .website-img {
-		width: 65%;
-		margin-left: 15%;
+	#clow .website-img {
+		box-shadow: none;
 	}
 
 	.contact-card {
