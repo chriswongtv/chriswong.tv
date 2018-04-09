@@ -1,11 +1,21 @@
-# ChrisWong.TV
-The code that powers my personal website.
+# chriswong-tv
 
-## Demo
-This template is live on my personal website, [www.chriswong.tv](https://www.chriswong.tv).
+> Chris T.V. Wong
 
-## Frameworks & Libraries
-* [Google Fonts](https://fonts.google.com/)
-* [Font Awesome](http://fontawesome.io/)
-* [jQuery](http://jquery.com/)
-* [Retina.js](http://imulus.github.io/retinajs/)
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
