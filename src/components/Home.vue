@@ -5,7 +5,9 @@
         CHRIS WONG
       </div>
       <div class="subtitle">
-        Lead web developer at HackUCI.<br>Former intern and incoming UI Engineer at LinkedIn.<br>Computer Science, UC Irvine '18.
+        <span>Lead web developer at HackUCI.</span>
+        <span>Former intern and incoming UI Engineer at LinkedIn.</span>
+        <span>Computer Science senior at UC Irvine.</span>
       </div>
       <div class="hero-links">
         <a href="https://www.github.com/chriswongtv" target="_blank" class="link-underline">GitHub</a>
@@ -41,8 +43,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$max-tablet-width: 768px;
+
 #home {
   margin-top: 9rem;
+
+  @media screen and (max-width: $max-tablet-width) {
+    margin-top: 4.5rem;
+  }
 
   #hero {
     .title {
@@ -61,12 +69,30 @@ export default {
       animation: Gradient 15s ease infinite;
       -webkit-background-clip: text;
       color: transparent;
+
+      @media screen and (max-width: $max-tablet-width) {
+        font-size: 4rem;
+      }
     }
 
     .subtitle {
       font-weight: 300;
       font-size: 1.75rem;
       margin: 2.5rem 0 2.75rem;
+
+      span {
+        display: block;
+
+        @media screen and (max-width: $max-tablet-width) {
+          &+span {
+            padding-top: .75rem;
+          }
+        }
+      }
+
+      @media screen and (max-width: $max-tablet-width) {
+        font-size: 1.5rem;
+      }
     }
 
     .hero-links {
@@ -88,6 +114,10 @@ export default {
     margin: 9.25rem -.75rem;
     flex-direction: row;
     flex-wrap: wrap;
+
+    @media screen and (max-width: $max-tablet-width) {
+      margin-bottom: 4.5rem;
+    }
   }
 }
 </style>

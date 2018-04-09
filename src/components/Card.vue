@@ -43,9 +43,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$max-tablet-width: 768px;
+
 .card-container {
   flex: 0 0 auto;
   flex-basis: 50%;
+
+  @media screen and (max-width: $max-tablet-width) {
+    flex-basis: 100%;
+  }
 
   .card {
     margin: .75rem .75rem .75rem;

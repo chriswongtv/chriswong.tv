@@ -11,6 +11,8 @@ export default {
 </script>
 
 <style lang="scss">
+$max-tablet-width: 768px;
+$max-phone-width: 480px;
 $link-underline-color: #81ecec;
 
 html {
@@ -34,6 +36,10 @@ body {
 		color: #222f3e;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+
+		@media screen and (max-width: $max-tablet-width) {
+			padding: 0 2.5rem;
+		}
 	}
 }
 
