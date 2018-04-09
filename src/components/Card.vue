@@ -60,9 +60,22 @@ $max-tablet-width: 768px;
     cursor: pointer;
 
     .card-image {
+      overflow: hidden;
+      transition: all .4s ease;
+
+      &:hover {
+        // box-shadow: 0 4px 16px rgba(0,0,0,.08);
+      }
+
       img {
         max-width: 100%;
         border-radius: 4px;
+        transform: scale(1.01);
+        transition: all .4s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
       }
     }
 

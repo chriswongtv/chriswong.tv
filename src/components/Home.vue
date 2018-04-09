@@ -49,7 +49,7 @@ $max-tablet-width: 768px;
   margin-top: 9rem;
 
   @media screen and (max-width: $max-tablet-width) {
-    margin-top: 4.5rem;
+    margin-top: 12.5vh;
   }
 
   #hero {
@@ -71,7 +71,7 @@ $max-tablet-width: 768px;
       color: transparent;
 
       @media screen and (max-width: $max-tablet-width) {
-        font-size: 4rem;
+        font-size: 3.5rem;
       }
     }
 
@@ -91,7 +91,7 @@ $max-tablet-width: 768px;
       }
 
       @media screen and (max-width: $max-tablet-width) {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
       }
     }
 
@@ -99,7 +99,7 @@ $max-tablet-width: 768px;
       a {
         text-decoration: none;
 		    color: #57606f;
-        font-size: 1.2rem;
+        font-size: 1.19rem;
         text-transform: lowercase;
 
         &+a {
