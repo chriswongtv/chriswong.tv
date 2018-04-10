@@ -1,22 +1,24 @@
 <template>
   <div class="card-container">
-    <div class="card" v-on:click="onClick">
-      <div class="card-image">
-        <img :src="image">
-      </div>
-      <div class="card-text">
-        <div class="card-title">
-          {{ title }}
+    <div class="card">
+      <WorkLink :to="link">
+        <img :src="image" class="card-image">
+        <div class="card-text">
+          <div class="card-title">
+            {{ title }}
+          </div>
+          <div class="card-description">
+            {{description}}
+          </div>
         </div>
-        <div class="card-description">
-          {{description}}
-        </div>
-      </div>
+      </WorkLink>
     </div>
   </div>
 </template>
 
 <script>
+import WorkLink from '@/components/WorkLink'
+
 export default {
   name: 'Card',
   props: ['title', 'imageUri', 'description', 'link'],
@@ -25,18 +27,12 @@ export default {
 
     }
   },
+  components: {
+    WorkLink
+  },
   computed: {
     image () {
       return this.imageUri ? require('../assets/img/' + this.imageUri + '.png') : null
-    }
-  },
-  methods: {
-    onClick: function () {
-      if (this.link.includes('https://') || this.link.includes('http://')) {
-        window.open(this.link)
-      } else {
-        this.$router.push(this.link)
-      }
     }
   }
 }
@@ -57,30 +53,32 @@ $max-tablet-width: 768px;
     margin: .75rem .75rem .75rem;
     height: calc(100% - 1.5rem);
     border-radius: 5px;
-    cursor: pointer;
+
+    &:hover {
+      .card-image {
+        // transform: scale3d(1.01, 1.01, 1.01) translateX(.5%);
+        transform: translateY(-.3rem);
+      }
+
+      .card-text {
+        opacity: 1;
+        color: #1e272e;
+        // transform: translateX(.5%);
+        transform: translateY(-.25rem);
+      }
+    }
 
     .card-image {
-      overflow: hidden;
+      max-width: 100%;
+      border-radius: 4px;
+      transform: scale3d(1, 1, 1);
       transition: all .4s ease;
-
-      &:hover {
-        // box-shadow: 0 4px 16px rgba(0,0,0,.08);
-      }
-
-      img {
-        max-width: 100%;
-        border-radius: 4px;
-        transform: scale(1.01);
-        transition: all .4s ease;
-
-        &:hover {
-          transform: scale(1.02);
-        }
-      }
     }
 
     .card-text {
       padding: .5rem 0;
+      opacity: .9;
+      transition: all .4s ease;
 
       .card-title {
         font-size: 1.75rem;

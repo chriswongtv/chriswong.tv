@@ -56,6 +56,16 @@ body {
 	color: #fff;
 }
 
+@keyframes fadein {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%

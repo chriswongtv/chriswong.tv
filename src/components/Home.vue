@@ -7,7 +7,7 @@
       <div class="subtitle">
         <span>Lead web developer at HackUCI.</span>
         <span>Former intern and incoming UI Engineer at LinkedIn.</span>
-        <span>Computer Science senior at UC Irvine.</span>
+        <span>Computer Science undergrad at UC Irvine.</span>
       </div>
       <div class="hero-links">
         <a href="https://www.github.com/chriswongtv" target="_blank" class="link-underline">GitHub</a>
@@ -21,7 +21,7 @@
       <Card title="Coolection" imageUri="coolection" description="Intelligent link library" link="https://www.coolection.co"></Card>
       <Card title="Clow" imageUri="clow" description="Awarded Best Big Data Hack at TreeHacks 2016" link="http://blog.chriswong.tv/treehacks"></Card>
       <Card title="JoyFeed" imageUri="joyfeed" description="Winner of HP sponsor prize at AngelHack SF 2016" link="http://blog.chriswong.tv/joyfeed"></Card>
-      <Card title="Cogifire" imageUri="cogifire" description="Web development agency" link="https://www.cogifire.com"></Card>
+      <Card title="Cogifire" imageUri="cogifire" description="Web development agency" link="http://www.cogifire.com"></Card>
     </section>
   </div>
 </template>
@@ -69,6 +69,8 @@ $max-tablet-width: 768px;
       animation: Gradient 15s ease infinite;
       -webkit-background-clip: text;
       color: transparent;
+      animation: fadein .5s both;
+		  animation-delay: .2s;
 
       @media screen and (max-width: $max-tablet-width) {
         font-size: 3.5rem;
@@ -79,6 +81,8 @@ $max-tablet-width: 768px;
       font-weight: 300;
       font-size: 1.75rem;
       margin: 2.5rem 0 2.75rem;
+      animation: fadein .5s both;
+		  animation-delay: .4s;
 
       span {
         display: block;
@@ -96,6 +100,9 @@ $max-tablet-width: 768px;
     }
 
     .hero-links {
+      animation: fadein .5s both;
+      animation-delay: .65s;
+
       a {
         text-decoration: none;
 		    color: #57606f;
@@ -114,6 +121,8 @@ $max-tablet-width: 768px;
     margin: 9.25rem -.75rem;
     flex-direction: row;
     flex-wrap: wrap;
+    animation: fadein .5s both;
+    animation-delay: .9s;
 
     @media screen and (max-width: $max-tablet-width) {
       margin-bottom: 4.5rem;
