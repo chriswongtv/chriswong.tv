@@ -64,13 +64,12 @@ $max-tablet-width: 768px;
       // background: linear-gradient(45deg, #EE7752, #E73C7E, #7579ff, #b224ef);
       // background: linear-gradient(45deg, #EE7752, #E73C7E, #b224ef, #6713d2);
       background-size: 400% 400%;
-      -webkit-animation: Gradient 15s ease infinite;
-      -moz-animation: Gradient 15s ease infinite;
-      animation: Gradient 15s ease infinite;
+      -webkit-animation: fadein .5s both, Gradient 15s ease infinite;
+      -moz-animation: fadein .5s both, Gradient 15s ease infinite;
+      animation: fadein .5s both, Gradient 15s ease infinite;
+		  animation-delay: .2s;
       -webkit-background-clip: text;
       color: transparent;
-      animation: fadein .5s both;
-		  animation-delay: .2s;
 
       @media screen and (max-width: $max-tablet-width) {
         font-size: 3.5rem;
