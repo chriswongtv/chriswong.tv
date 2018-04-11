@@ -116,6 +116,16 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       },
       {
+        from: path.resolve(__dirname, '../legacy'),
+        to: 'legacy',
+        ignore: ['.*']
+      },
+      {
+        from: path.resolve(__dirname, '../rainbow'),
+        to: 'rainbow',
+        ignore: ['.*']
+      },
+      {
         from: path.resolve(__dirname, '../root'),
         to: config.build.assetsRoot,
         ignore: ['.*']
