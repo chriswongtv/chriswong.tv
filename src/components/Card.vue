@@ -56,14 +56,12 @@ $max-tablet-width: 768px;
 
     &:hover {
       .card-image {
-        // transform: scale3d(1.01, 1.01, 1.01) translateX(.5%);
         transform: translateY(-.3rem);
       }
 
       .card-text {
         opacity: 1;
         color: #1e272e;
-        // transform: translateX(.5%);
         transform: translateY(-.25rem);
       }
     }

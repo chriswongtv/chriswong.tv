@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <section id="hero">
+    <section id="hero" class="container">
       <div class="title">
         CHRIS WONG
       </div>
@@ -12,16 +12,29 @@
       <div class="hero-links">
         <a href="https://www.github.com/chriswongtv" target="_blank" class="link-underline">GitHub</a>
         <a href="https://www.linkedin.com/in/chriswongtv" target="_blank" class="link-underline">LinkedIn</a>
+        <!-- <a href="http://blog.chriswong.tv" target="_blank" class="link-underline">Blog</a> -->
         <a href="https://resume.chriswong.tv" target="_blank" class="link-underline">Resume</a>
       </div>
     </section>
-    <section id="card">
-      <Card title="HackUCI" imageUri="hackuci" description="Organized Orange County's largest intercollegiate hackathon" link="https://www.hackuci.com"></Card>
-      <Card title="LinkedIn" imageUri="linkedin" description="UI Engineer Intern at LinkedIn Jobs" link="https://www.linkedin.com"></Card>
-      <Card title="Coolection" imageUri="coolection" description="Intelligent link library" link="https://www.coolection.co"></Card>
-      <Card title="Clow" imageUri="clow" description="Awarded Best Big Data Hack at TreeHacks 2016" link="http://blog.chriswong.tv/treehacks"></Card>
-      <Card title="JoyFeed" imageUri="joyfeed" description="Winner of HP sponsor prize at AngelHack SF 2016" link="http://blog.chriswong.tv/joyfeed"></Card>
-      <Card title="Cogifire" imageUri="cogifire" description="Web development agency" link="http://www.cogifire.com"></Card>
+    <section id="card" class="container">
+      <div class="card-collection">
+        <Card title="HackUCI" imageUri="hackuci" description="Organized Orange County's largest intercollegiate hackathon" link="https://www.hackuci.com"></Card>
+        <Card title="LinkedIn" imageUri="linkedin" description="UI Engineer Intern at LinkedIn Jobs" link="https://www.linkedin.com"></Card>
+        <Card title="Coolection" imageUri="coolection" description="Intelligent link library" link="https://www.coolection.co"></Card>
+        <Card title="Clow" imageUri="clow" description="Awarded Best Big Data Hack at TreeHacks 2016" link="http://blog.chriswong.tv/treehacks"></Card>
+        <Card title="JoyFeed" imageUri="joyfeed" description="Winner of HP sponsor prize at AngelHack SF 2016" link="http://blog.chriswong.tv/joyfeed"></Card>
+        <Card title="Cogifire" imageUri="cogifire" description="Web development agency" link="http://www.cogifire.com"></Card>
+      </div>
+    </section>
+    <section id="contact">
+      <!-- <span class="email">
+        Interested in chatting? Drop me a message at
+        <a href="mailto:chris@cogifire.com" class="email link-underline">&#099;&#104;&#114;&#105;&#115;&#064;&#099;&#111;&#103;&#105;&#102;&#105;&#114;&#101;&#046;&#099;&#111;&#109;</a>.
+      </span> -->
+      <span class="email">
+        <i class="far fa-envelope"></i>
+        <a href="mailto:chris@cogifire.com" class="email link-underline">&#099;&#104;&#114;&#105;&#115;&#064;&#099;&#111;&#103;&#105;&#102;&#105;&#114;&#101;&#046;&#099;&#111;&#109;</a>
+      </span>
     </section>
   </div>
 </template>
@@ -83,7 +96,7 @@ $max-tablet-width: 768px;
       animation: fadein .5s both;
 		  animation-delay: .4s;
 
-      span {
+      >span {
         display: block;
 
         @media screen and (max-width: $max-tablet-width) {
@@ -102,29 +115,70 @@ $max-tablet-width: 768px;
       animation: fadein .5s both;
       animation-delay: .65s;
 
-      a {
+      >a {
         text-decoration: none;
 		    color: #57606f;
         font-size: 1.19rem;
+        margin-right: 1.5rem;
         text-transform: lowercase;
-
-        &+a {
-          margin-left: 1.5rem;
-        }
       }
     }
   }
 
   #card {
-    display: flex;
-    margin: 9.25rem -.75rem;
-    flex-direction: row;
-    flex-wrap: wrap;
+    .card-collection {
+      display: flex;
+      margin: 9.25rem -.75rem 0 -.75rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      animation: fadein .5s both;
+      animation-delay: .9s;
+    }
+  }
+
+  #contact {
+    text-align: center;
+    margin-top: 6.25rem;
+    padding: 10rem 0 6.25rem 0;
+    padding: 4.6875rem 0 6.25rem 0;
+    background: rgba(223, 249, 251, .65);
     animation: fadein .5s both;
-    animation-delay: .9s;
+    animation-delay: 1.15s;
 
     @media screen and (max-width: $max-tablet-width) {
-      margin-bottom: 4.5rem;
+      margin-top: 4.5rem;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      display: block;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: 3.125rem;
+      margin-top: -7.8125rem;
+      // height: 3.90625rem;
+      // margin-top: -8.59375rem;
+      background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'><polygon points='0,100 100,0 100,100' style='fill:#ebfbfc;' /></svg>");
+
+      @media screen and (max-width: $max-tablet-width) {
+        height: 1.5625rem;
+        margin-top: -6.25rem;
+      }
+    }
+
+    .email {
+      font-size: 1.3rem;
+      opacity: .9;
+      animation: fadein .5s both;
+      animation-delay: 1.3s;
+
+      >svg {
+        margin-right: .15rem;
+        padding-top: .1rem;
+      }
     }
   }
 }

@@ -29,16 +29,19 @@ body {
 
 	#app {
 		font-family: 'IBM Plex Sans', sans-serif;
-		max-width: 1250px;
-    margin-left: auto;
-    margin-right: auto;
-		padding: 0 5.5rem;
 		color: #222f3e;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 
-		@media screen and (max-width: $max-tablet-width) {
-			padding: 0 2.5rem;
+		.container {
+			max-width: 1250px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0 5.5rem;
+
+			@media screen and (max-width: $max-tablet-width) {
+				padding: 0 2.5rem;
+			}
 		}
 	}
 }
@@ -53,7 +56,6 @@ body {
 
 .link-underline:hover {
 	box-shadow: inset 0 -1.3em 0 $link-underline-color;
-	color: #fff;
 }
 
 @keyframes fadein {
