@@ -18,11 +18,11 @@
     </section>
     <section id="card" class="container">
       <div class="card-collection">
-        <Card title="HackUCI" imageUri="hackuci" description="Organized Orange County's largest intercollegiate hackathon" link="https://www.hackuci.com"></Card>
+        <Card title="HackUCI" imageUri="hackuci" description="Orange County's largest intercollegiate hackathon" link="https://www.hackuci.com"></Card>
         <Card title="LinkedIn" imageUri="linkedin" description="UI Engineer Intern at LinkedIn Jobs" link="https://www.linkedin.com"></Card>
-        <Card title="Coolection" imageUri="coolection" description="Intelligent link library" link="https://www.coolection.co"></Card>
+        <Card title="Coolection" imageUri="coolection" description="Smart link library with automated tag generation" link="https://www.coolection.co"></Card>
         <Card title="Clow" imageUri="clow" description="Awarded Best Big Data Hack at TreeHacks 2016" link="http://blog.chriswong.tv/treehacks"></Card>
-        <Card title="JoyFeed" imageUri="joyfeed" description="Winner of HP sponsor prize at AngelHack SF 2016" link="http://blog.chriswong.tv/joyfeed"></Card>
+        <Card title="JoyFeed" imageUri="joyfeed" description="Winner of HP Enterprise sponsor prize at AngelHack SF 2016" link="http://blog.chriswong.tv/joyfeed"></Card>
         <Card title="Cogifire" imageUri="cogifire" description="Web development agency" link="http://www.cogifire.com"></Card>
       </div>
     </section>
