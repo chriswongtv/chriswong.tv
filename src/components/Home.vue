@@ -27,10 +27,6 @@
       </div>
     </section>
     <section id="contact">
-      <!-- <span class="email">
-        Interested in chatting? Drop me a message at
-        <a href="mailto:chris@cogifire.com" class="email link-underline">&#099;&#104;&#114;&#105;&#115;&#064;&#099;&#111;&#103;&#105;&#102;&#105;&#114;&#101;&#046;&#099;&#111;&#109;</a>.
-      </span> -->
       <span class="email">
         <i class="far fa-envelope"></i>
         <a href="mailto:chris@cogifire.com" class="email link-underline">&#099;&#104;&#114;&#105;&#115;&#064;&#099;&#111;&#103;&#105;&#102;&#105;&#114;&#101;&#046;&#099;&#111;&#109;</a>
@@ -62,7 +58,7 @@ $max-tablet-width: 768px;
   margin-top: 9rem;
 
   @media screen and (max-width: $max-tablet-width) {
-    margin-top: 12.5vh;
+    margin-top: 11vh;
   }
 
   #hero {
@@ -138,35 +134,15 @@ $max-tablet-width: 768px;
 
   #contact {
     text-align: center;
-    margin-top: 6.25rem;
-    padding: 10rem 0 6.25rem 0;
-    padding: 4.6875rem 0 6.25rem 0;
+    margin-top: 5.5rem;
+    padding: 6.25rem 0;
     background: rgba(223, 249, 251, .65);
     animation: fadein .5s both;
     animation-delay: 1.15s;
 
     @media screen and (max-width: $max-tablet-width) {
-      margin-top: 4.5rem;
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 100%;
-      display: block;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      height: 3.125rem;
-      margin-top: -7.8125rem;
-      // height: 3.90625rem;
-      // margin-top: -8.59375rem;
-      background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'><polygon points='0,100 100,0 100,100' style='fill:#ebfbfc;' /></svg>");
-
-      @media screen and (max-width: $max-tablet-width) {
-        height: 1.5625rem;
-        margin-top: -6.25rem;
-      }
+      margin-top: 5rem;
+      padding: 6.25rem 0 7.5rem 0;
     }
 
     .email {

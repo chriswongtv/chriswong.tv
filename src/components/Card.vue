@@ -50,7 +50,7 @@ $max-tablet-width: 768px;
   }
 
   .card {
-    margin: .75rem .75rem .75rem;
+    margin: .75rem;
     height: calc(100% - 1.5rem);
     border-radius: 5px;
 
