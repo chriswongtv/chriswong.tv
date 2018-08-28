@@ -1,13 +1,13 @@
 <template>
   <div id="home">
     <section id="hero" class="container">
-      <div class="title">
+      <span class="title">
         CHRIS WONG
-      </div>
+      </span>
       <div class="subtitle">
-        <span>Lead web developer at HackUCI.</span>
-        <span>Former intern and incoming UI Engineer at LinkedIn.</span>
-        <span>Computer Science undergrad at UC Irvine.</span>
+        <span>Software engineer at LinkedIn.</span>
+        <span>Former lead web developer at HackUCI.</span>
+        <span>Recent computer science graduate from UC Irvine.</span>
       </div>
       <div class="hero-links">
         <a href="https://www.github.com/chriswongtv" target="_blank" class="link-underline">GitHub</a>
