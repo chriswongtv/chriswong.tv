@@ -1,9 +1,11 @@
 <template>
   <div id="home">
     <section id="hero" class="container">
-      <span class="title">
-        CHRIS WONG
-      </span>
+      <div class="title">
+        <span>
+          CHRIS WONG
+        </span>
+      </div>
       <div class="subtitle">
         <span>Software engineer at LinkedIn.</span>
         <span>Former lead web developer at HackUCI.</span>
@@ -53,6 +55,7 @@ export default {
 
 <style scoped lang="scss">
 $max-tablet-width: 768px;
+$min-desktop-width: 769px;
 
 #home {
   margin-top: 9rem;
@@ -65,23 +68,32 @@ $max-tablet-width: 768px;
     .title {
       font-family: 'Montserrat';
       font-weight: 700;
-      font-size: 5rem;
       line-height: 1em;
-      // background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-      background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-      // background: linear-gradient(-45deg, #EE7752, #E73C7E, #FF0066, #D41872);
-      // background: linear-gradient(45deg, #EE7752, #E73C7E, #7579ff, #b224ef);
-      // background: linear-gradient(45deg, #EE7752, #E73C7E, #b224ef, #6713d2);
-      background-size: 400% 400%;
-      -webkit-animation: fadein .5s both, Gradient 15s ease infinite;
-      -moz-animation: fadein .5s both, Gradient 15s ease infinite;
-      animation: fadein .5s both, Gradient 15s ease infinite;
-		  animation-delay: .2s;
-      -webkit-background-clip: text;
-      color: transparent;
+
+      @media screen and (min-width: $min-desktop-width) {
+        span {
+          font-size: 5rem;
+          background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+          background-size: 400% 400%;
+          -webkit-animation: fadein .5s both, Gradient 15s ease infinite;
+          -moz-animation: fadein .5s both, Gradient 15s ease infinite;
+          animation: fadein .5s both, Gradient 15s ease infinite;
+          animation-delay: .2s;
+          -webkit-background-clip: text;
+          color: transparent;
+        }
+      }
 
       @media screen and (max-width: $max-tablet-width) {
         font-size: 3.5rem;
+        background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
+        -webkit-animation: fadein .5s both, Gradient 15s ease infinite;
+        -moz-animation: fadein .5s both, Gradient 15s ease infinite;
+        animation: fadein .5s both, Gradient 15s ease infinite;
+        animation-delay: .2s;
+        -webkit-background-clip: text;
+        color: transparent;
       }
     }
 
