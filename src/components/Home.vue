@@ -7,8 +7,8 @@
         </span>
       </div>
       <div class="subtitle">
-        <span>Software engineer at LinkedIn.</span>
-        <span>Former lead web developer at HackUCI.</span>
+        <span>Frontend engineer at Mercury.</span>
+        <span>Previously senior UI engineer at LinkedIn.</span>
         <span>Recent computer science graduate from UC Irvine.</span>
       </div>
       <div class="hero-links">
